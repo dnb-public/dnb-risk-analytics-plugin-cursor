@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dnb-risk-analytics": {
+      "url": "https://agents.riskanalytics.dnb.com/mcp",
+      "auth": {
+        "CLIENT_ID": "${env:DNB_RA_MCP_CLIENT_ID}",
+        "CLIENT_SECRET": "${env:DNB_RA_MCP_CLIENT_SECRET}",
+        "scopes": ["mcp.write", "mcp.read", "offline_access", "openid", "email", "profile"]
+      }
+    }
+  }
+}
